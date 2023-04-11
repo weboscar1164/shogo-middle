@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Noto+Sans+JP:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./dist/css/style.css" />
+		<title>蓼科ごとう農園公式ページ</title>
+	</head>
+	<body>
+		<section class="mv">
+			<div class="mv_container">
+				<h1>
+					<span>あなたは知ってる？</span>
+					<span>蓼科を丸ごと味わう</span>
+					<span>喜びを</span>
+				</h1>
+			</div>
+		</section>
+
+		<header class="header">
+			<div class="header_logo">
+				<img src="./img/logo-01.svg" alt="" class="header_logo_img" />
+				<img src="./img/logo-02.svg" alt="" class="header_logo_text" />
+			</div>
+			<nav class="header_nav_pc">
+				<ul>
+					<li class="header_nav_pc_link">
+						<a href="#about">この農場について</a>
+					</li>
+					<li class="header_nav_pc_link"><a href="#products">製品一覧</a></li>
+					<li class="header_nav_pc_link"><a href="news">お知らせ</a></li>
+					<li class="header_nav_pc_blank"></li>
+					<li class="header_nav_pc_link"><a href="faq">FAQ</a></li>
+					<li class="header_nav_pc_link"><a href="access">アクセス</a></li>
+					<li class="header_nav_pc_link"><a href="contact">お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="about" class="about">
+			<div class="about_container">
+				<h2 class="about_title">
+					蓼科の生きた豊かな恵みを、<br class="br_md" />そのままに
+				</h2>
+				<div class="about_text_wrapper">
+					<p class="about_text">
+						「蓼科ごとう農園」は、<br
+							class="br_sm"
+						/>蓼科の新鮮な農産物を提供するだけでなく、<br
+							class="br_xsm_hidden"
+						/>
+						蓼科の自然環境を大切に守り、後世に残すことを使命としています。<br />
+						私たちは、農業に従事する者として、<br class="br_sm_hidden" />
+						土地や水、空気といった自然環境がもたらす恩恵に感謝し、<br
+							class="br_sm_hidden"
+						/>
+						その恩恵を受け継ぐ未来の世代にも、<br class="br_sm_hidden" />
+						同じような恩恵を受け継ぐことができるよう、 最善を尽くしています。<br />
+						そのため、私たちは有機農法を導入し、<br class="br_sm_hidden" />
+						化学肥料や農薬を極力使用しない栽培方法を取り入れています。<br />
+						また、自然災害に備え、耕作放棄地の再生や山の植林活動など、<br
+							class="br_sm_hidden"
+						/>
+						地域の環境保全活動にも積極的に参加しています。<br />
+						私たちは、「蓼科ごとう農園」を通じて、<br class="br_sm_hidden" />
+						蓼科の美しい自然を末永く守り、<br class="br_sm_hidden" />
+						地域の豊かな暮らしを支えることを目指しています。
+					</p>
+				</div>
+			</div>
+			<div class="about_bg_wrapper">
+				<img src="./img/about-01.png" alt="" class="about_bg_img" />
+				<img src="./img/about-02.png" alt="" class="about_bg_img" />
+			</div>
+		</section>
+
+		<section id="product" class="product" id="product">
+			<h2 class="product_title">製品一覧</h2>
+			<!-- スライダーのコンテナ -->
+			<div class="swiper product_slide_wrapper">
+				<!-- 必要に応じたwrapper -->
+				<div class="swiper-wrapper product_slide">
+					<!-- スライド -->
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/brussels-sprouts.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								標高1,000mオーバーの蓼科高原だからこその、あまあま芽キャベツ!!
+								1kg
+							</p>
+							<p class="product_card_content_price">￥ 4,200（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/strawberries.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック
+							</p>
+							<p class="product_card_content_price">￥ 4,800（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/grapes.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+							</p>
+							<p class="product_card_content_price">￥ 7,700（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/brussels-sprouts.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								標高1,000mオーバーの蓼科高原だからこその、あまあま芽キャベツ!!
+								1kg
+							</p>
+							<p class="product_card_content_price">￥ 4,200（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/strawberries.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック
+							</p>
+							<p class="product_card_content_price">￥ 4,800（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/grapes.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+							</p>
+							<p class="product_card_content_price">￥ 7,700（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/brussels-sprouts.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								標高1,000mオーバーの蓼科高原だからこその、あまあま芽キャベツ!!
+								1kg
+							</p>
+							<p class="product_card_content_price">￥ 4,200（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/strawberries.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック
+							</p>
+							<p class="product_card_content_price">￥ 4,800（税込）</p>
+						</div>
+					</div>
+					<div class="swiper-slide product_card">
+						<div class="product_card_img">
+							<img src="./img/grapes.jpg" alt="" />
+						</div>
+						<div class="product_card_content">
+							<p class="product_card_content_text">
+								蓼科ごとう農園オリジナル品種の「シャインマスカット」と「ナガノパープル」500g
+							</p>
+							<p class="product_card_content_price">￥ 7,700（税込）</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="news" class="news">
+			<div class="news_title section_title">お知らせ</div>
+			<div class="news_container">
+				<table>
+					<tbody>
+						<tr>
+							<th>2023/06/12</th>
+							<td>闇落ちイチゴの販売を開始します。</td>
+						</tr>
+						<tr>
+							<th>2023/05/14</th>
+							<td>NHK「うまいッ！（全国放送）」 に蓼科ごとう農園が登場。</td>
+						</tr>
+						<tr>
+							<th>2023/05/14</th>
+							<td>白樺湖直売所で、新鮮な春野菜と果物を販売しています</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section id="faq" class="faq">
+			<ul>
+				<li class="faq_item">
+					<div class="faq_item_question">冷蔵便で配送できますか？</div>
+					<div class="faq_item_answer">
+						冷蔵便に対応しています。その場合別途150円かかります。
+					</div>
+				</li>
+				<li class="faq_item">
+					<div class="faq_item_question">
+						どのような支払い方法がありますか？
+					</div>
+					<div class="faq_item_answer">
+						商品代引きとクレジットカード決済があります。代引き手数料は、10,800円未満で税込330円・10,800円以上32,400円未満で税込440円・32,400円以上102,400円未満で税込660円です。手数料はお客様のご負担となりますのでご了承ください。クレジットカード決済は、JCB・VISA・master・ダイナース・アメリカンエキスプレスのマークが入っているカードすべてご利用になれます。
+					</div>
+				</li>
+				<li class="faq_item">
+					<div class="faq_item_question">
+						プレゼント用にラッピングすることはできますか？
+					</div>
+					<div class="faq_item_answer">
+						可能です。ラッピングが必要な場合は、購入時にフォームの「ラッピングを希望」にチェックを入れてください。
+					</div>
+				</li>
+				<li class="faq_item">
+					<div class="faq_item_question">いちご狩りの予約は必要ですか</div>
+					<div class="faq_item_answer">
+						繁忙期（１～３月、GW期間中）の土日祝日は予約はご遠慮いただいておりますが、平日または繁忙期以外の土日祝日はご予約可能です。
+					</div>
+				</li>
+				<li class="faq_item">
+					<div class="faq_item_question">海外発送できますか？</div>
+					<div class="faq_item_answer">
+						現在のところ対応できておりません。海外からのご注文で日本国内への発送は承っております。
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section id="access" class="access">
+			<h2 class="access_title">アクセス</h2>
+			<div class="access_container">
+				<div class="access_table">
+					<table>
+						<tbody>
+							<tr>
+								<td>会社名</td>
+								<td>蓼科ごとう農園</td>
+							</tr>
+							<tr>
+								<td>代表者名</td>
+								<td>後藤 優香</td>
+							</tr>
+							<tr>
+								<td>所在地</td>
+								<td>長野県芽野市北山xxxxx</td>
+							</tr>
+							<tr>
+								<td>E-mail</td>
+								<td>tateshina-goto@gmail.com</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="access_map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d103190.03509175597!2d138.22371601383813!3d36.07669885537381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1680872294827!5m2!1sja!2sjp"
+						width="443"
+						height="334"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="contact_title">お問い合わせ</div>
+			<div class="contact_container">
+				<div class="contact_text">
+					ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。
+				</div>
+				<div class="contact_form">
+					<form action="#">
+						<table>
+							<tbody>
+								<tr>
+									<td class="contact_form_label">
+										<span class="contact_form_label">お問い合わせ種類</span
+										><span class="contact_form_required">必須</span>
+									</td>
+									<td class="contact_radios">
+										<li class="contact_radio">
+											<input type="radio" name="about" id="about01" />
+											<label for="about01" class="contact_radio_label"
+												>弊社製品について</label
+											>
+										</li>
+										<li class="contact_radio">
+											<input type="radio" name="about" id="about02" />
+											<label for="about02" class="contact_radio_label"
+												>いちご狩りについて</label
+											>
+										</li>
+										<li class="contact_radio">
+											<input type="radio" name="about" id="about03" />
+											<label for="about03" class="contact_radio_label"
+												>その他のお問い合わせ</label
+											>
+										</li>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="contact_form_label" for="name">お名前</label>
+										<span class="contact_form_required">必須</span>
+									</td>
+									<td>
+										<input class="contact_form_input" type="text" id="name" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="contact_form_label" for="address"
+											>郵便番号</label
+										>
+									</td>
+									<td>
+										<input
+											class="contact_form_input contact_form_input_address"
+											type="text"
+											id="address"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="contact_form_label" for="email"
+											>メールアドレス</label
+										>
+										<span class="contact_form_required">必須</span>
+									</td>
+									<td>
+										<input class="contact_form_input" type="email" id="email" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="contact_form_label" for="phone"
+											>電話番号</label
+										>
+										<span class="contact_form_required">必須</span>
+									</td>
+									<td><input type="phone" id="phone" /></td>
+								</tr>
+								<tr>
+									<td>
+										<label class="contact_form_label" for="contact"
+											>お問い合わせ内容</label
+										>
+										<span class="contact_form_required">必須</span>
+									</td>
+									<td>
+										<textarea
+											name="contact"
+											id="contact"
+											cols="30"
+											rows="10"
+										></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button type="submit">送信する</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer_logo">
+				<img src="./img/logo-01.svg" alt="" class="footer_logo_img" />
+				<img src="./img/logo-02.svg" alt="" class="footer_logo_text" />
+				<ul class="footer_nav">
+					<li class="footer_nav_link"><a href="#about">この農場について</a></li>
+					<li class="footer_nav_link"><a href="#products">製品一覧</a></li>
+					<li class="footer_nav_link"><a href="news">お知らせ</a></li>
+					<li class="footer_nav_link"><a href="faq">FAQ</a></li>
+					<li class="footer_nav_link"><a href="access">アクセス</a></li>
+					<li class="footer_nav_link"><a href="contact">お問い合わせ</a></li>
+				</ul>
+			</div>
+			<div class="footer_copy">
+				<small>©︎ 2019 SATONOUEN.</small>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="./dist/js/script.js"></script>
+	</body>
+</html>
