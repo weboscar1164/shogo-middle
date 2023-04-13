@@ -428,6 +428,18 @@ body {
   flex-direction: column;
   height: auto;
 }
+.product_card_img {
+  padding-top: 62.9%;
+  position: relative;
+  width: 100%;
+}
+.product_card_img img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .product_card_content {
   background: #fff;
   display: flex;
@@ -444,5 +456,105 @@ body {
   font-weight: 400;
   line-height: 23px;
   margin-top: 14px;
+}
+
+.news {
+  padding: 91px 0;
+}
+.news_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+}
+.news_container {
+  margin-inline: auto;
+  margin-top: 90px;
+  width: min(67%, 934px);
+}
+.news_table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.news_table tbody tr {
+  border-top: 1px solid #c6c6c6;
+}
+.news_table tbody tr th,
+.news_table tbody tr td {
+  padding: 25px 0;
+  vertical-align: middle;
+}
+.news_table tbody tr th {
+  font-weight: 400;
+  min-width: 120px;
+  text-align-last: left;
+  width: 20%;
+}
+.news_table tbody tr :last-of-type {
+  border-bottom: 1px solid #c6c6c6;
+}
+@media (max-width: 992px) {
+  .news_container {
+    width: 90%;
+  }
+}
+
+.faq {
+  background: #fdf9ef;
+  padding: 91px 0;
+}
+.faq_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+}
+.faq_container {
+  margin-inline: auto;
+  margin-top: 73px;
+  width: min(58%, 740px);
+}
+.faq_item {
+  width: 100%;
+}
+.faq_item_question {
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 31px;
+  padding: 12px 14px;
+  position: relative;
+}
+.faq_item_question::before {
+  content: "Q";
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.faq_item_question::after {
+  background: url(../../img/arrow.svg);
+  bottom: -23px;
+  content: "";
+  cursor: pointer;
+  height: 16px;
+  position: absolute;
+  right: 14px;
+  rotate: 0;
+  transition: rotate 0.6s ease;
+  width: 16px;
+}
+.faq_item_answer {
+  display: none;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+@media (max-width: 992px) {
+  .faq_container {
+    width: 90%;
+  }
+}
+
+.js_is_open::after {
+  rotate: 180deg;
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */

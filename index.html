@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Noto+Sans+JP:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -201,7 +201,7 @@
 		<section id="news" class="news">
 			<div class="news_title section_title">お知らせ</div>
 			<div class="news_container">
-				<table>
+				<table class="news_table">
 					<tbody>
 						<tr>
 							<th>2023/06/12</th>
@@ -221,42 +221,51 @@
 		</section>
 
 		<section id="faq" class="faq">
-			<ul>
-				<li class="faq_item">
-					<div class="faq_item_question">冷蔵便で配送できますか？</div>
-					<div class="faq_item_answer">
-						冷蔵便に対応しています。その場合別途150円かかります。
-					</div>
-				</li>
-				<li class="faq_item">
-					<div class="faq_item_question">
-						どのような支払い方法がありますか？
-					</div>
-					<div class="faq_item_answer">
-						商品代引きとクレジットカード決済があります。代引き手数料は、10,800円未満で税込330円・10,800円以上32,400円未満で税込440円・32,400円以上102,400円未満で税込660円です。手数料はお客様のご負担となりますのでご了承ください。クレジットカード決済は、JCB・VISA・master・ダイナース・アメリカンエキスプレスのマークが入っているカードすべてご利用になれます。
-					</div>
-				</li>
-				<li class="faq_item">
-					<div class="faq_item_question">
-						プレゼント用にラッピングすることはできますか？
-					</div>
-					<div class="faq_item_answer">
-						可能です。ラッピングが必要な場合は、購入時にフォームの「ラッピングを希望」にチェックを入れてください。
-					</div>
-				</li>
-				<li class="faq_item">
-					<div class="faq_item_question">いちご狩りの予約は必要ですか</div>
-					<div class="faq_item_answer">
-						繁忙期（１～３月、GW期間中）の土日祝日は予約はご遠慮いただいておりますが、平日または繁忙期以外の土日祝日はご予約可能です。
-					</div>
-				</li>
-				<li class="faq_item">
-					<div class="faq_item_question">海外発送できますか？</div>
-					<div class="faq_item_answer">
-						現在のところ対応できておりません。海外からのご注文で日本国内への発送は承っております。
-					</div>
-				</li>
-			</ul>
+			<h2 class="faq_title">FAQ</h2>
+			<div class="faq_container">
+				<ul>
+					<li class="faq_item">
+						<div class="faq_item_question js_open_answer_toggle">
+							冷蔵便で配送できますか？
+						</div>
+						<div class="faq_item_answer">
+							冷蔵便に対応しています。その場合別途150円かかります。
+						</div>
+					</li>
+					<li class="faq_item">
+						<div class="faq_item_question js_open_answer_toggle">
+							どのような支払い方法がありますか？
+						</div>
+						<div class="faq_item_answer">
+							商品代引きとクレジットカード決済があります。代引き手数料は、10,800円未満で税込330円・10,800円以上32,400円未満で税込440円・32,400円以上102,400円未満で税込660円です。手数料はお客様のご負担となりますのでご了承ください。クレジットカード決済は、JCB・VISA・master・ダイナース・アメリカンエキスプレスのマークが入っているカードすべてご利用になれます。
+						</div>
+					</li>
+					<li class="faq_item">
+						<div class="faq_item_question js_open_answer_toggle">
+							プレゼント用にラッピングすることはできますか？
+						</div>
+						<div class="faq_item_answer">
+							可能です。ラッピングが必要な場合は、購入時にフォームの「ラッピングを希望」にチェックを入れてください。
+						</div>
+					</li>
+					<li class="faq_item">
+						<div class="faq_item_question js_open_answer_toggle">
+							いちご狩りの予約は必要ですか
+						</div>
+						<div class="faq_item_answer">
+							繁忙期（１～３月、GW期間中）の土日祝日は予約はご遠慮いただいておりますが、平日または繁忙期以外の土日祝日はご予約可能です。
+						</div>
+					</li>
+					<li class="faq_item">
+						<div class="faq_item_question js_open_answer_toggle">
+							海外発送できますか？
+						</div>
+						<div class="faq_item_answer">
+							現在のところ対応できておりません。海外からのご注文で日本国内への発送は承っております。
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 		<section id="access" class="access">
@@ -419,6 +428,7 @@
 			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="./dist/js/jquery-3.6.4.min.js"></script>
 		<script src="./dist/js/script.js"></script>
 	</body>
 </html>
