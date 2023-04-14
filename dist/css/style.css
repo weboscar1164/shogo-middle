@@ -535,7 +535,6 @@ body {
   background: url(../../img/arrow.svg);
   bottom: -23px;
   content: "";
-  cursor: pointer;
   height: 16px;
   position: absolute;
   right: 14px;
@@ -556,5 +555,91 @@ body {
 
 .js_is_open::after {
   rotate: 180deg;
+}
+
+.access {
+  padding: 91px 0 78px;
+}
+.access_title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.access_container {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  width: min(78%, 934px);
+}
+.access_table {
+  flex-grow: 1;
+}
+.access_table table {
+  border-collapse: collapse;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align-last: left;
+  width: 100%;
+}
+.access_table table tbody tr {
+  border-top: 1px solid #c6c6c6;
+}
+.access_table table tbody tr:last-of-type {
+  border-bottom: 1px solid #c6c6c6;
+}
+.access_table table tbody th {
+  max-width: 174px;
+  width: 30%;
+}
+.access_table table tbody th,
+.access_table table tbody td {
+  padding: 21px 0 22px;
+}
+.access_map {
+  flex-grow: 3;
+  margin-left: 32px;
+  min-width: 380px;
+}
+.access_map_wrapper {
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+.access_map_wrapper iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .access_container {
+    flex-direction: column;
+  }
+  .access_table table {
+    margin-inline: auto;
+    max-width: 500px;
+  }
+  .access_map {
+    margin: 30px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .access_container {
+    width: 90%;
+  }
+  .access_table table {
+    font-size: 16px;
+  }
+  .access_table table tbody th,
+  .access_table table tbody td {
+    padding: 18px 0;
+  }
+  .access_map {
+    min-width: auto;
+  }
 }
 /*# sourceMappingURL=sourcemaps/style.css.map */
