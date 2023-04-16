@@ -315,101 +315,93 @@
 				<div class="contact_text">
 					ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。
 				</div>
-				<div class="contact_form">
+				<div class="contact_form_container">
 					<p class="contact_form_title">お問い合わせメールフォーム</p>
-					<form action="#">
-						<table class="contact_table">
-							<tbody>
-								<tr class="contact_table_radio">
-									<td class="contact_table_label">
-										<span class="contact_form_label">お問い合わせ種類</span
-										><span class="contact_form_required">必須</span>
-									</td>
-									<td class="contact_table_input contact_radio_wrapper">
-										<li class="contact_radio">
-											<input type="radio" name="about" id="about01" />
-											<label for="about01" class="contact_radio_label"
-												>弊社製品について</label
-											>
-										</li>
-										<li class="contact_radio">
-											<input type="radio" name="about" id="about02" />
-											<label for="about02" class="contact_radio_label"
-												>いちご狩りについて</label
-											>
-										</li>
-										<li class="contact_radio">
-											<input type="radio" name="about" id="about03" />
-											<label for="about03" class="contact_radio_label"
-												>その他のお問い合わせ</label
-											>
-										</li>
-									</td>
-								</tr>
-								<tr>
-									<td class="contact_table_label">
-										<label class="contact_form_label" for="name">お名前</label>
-										<span class="contact_form_required">必須</span>
-									</td>
-									<td class="contact_table_input">
-										<input class="contact_form_input" type="text" id="name" />
-									</td>
-								</tr>
-								<tr>
-									<td class="contact_table_label">
-										<label class="contact_form_label" for="address"
-											>郵便番号</label
-										>
-									</td>
-									<td class="contact_table_input">
-										<input
-											class="contact_form_input contact_form_input_address"
-											type="text"
-											id="address"
-										/>
-									</td>
-								</tr>
-								<tr>
-									<td class="contact_table_label">
-										<label class="contact_form_label" for="email"
-											>メールアドレス</label
-										>
-										<span class="contact_form_required">必須</span>
-									</td>
-									<td class="contact_table_input">
-										<input class="contact_form_input" type="email" id="email" />
-									</td>
-								</tr>
-								<tr>
-									<td class="contact_table_label">
-										<label class="contact_form_label" for="phone"
-											>電話番号</label
-										>
-										<span class="contact_form_required">必須</span>
-									</td>
-									<td class="contact_table_input">
-										<input class="contact_form_input" type="phone" id="phone" />
-									</td>
-								</tr>
-								<tr>
-									<td class="contact_table_label">
-										<label class="contact_form_label" for="contact"
-											>お問い合わせ内容</label
-										>
-										<span class="contact_form_required">必須</span>
-									</td>
-									<td class="contact_table_input">
-										<textarea
-											class="contact_form_textarea"
-											name="contact"
-											id="contact"
-											cols="30"
-											rows="10"
-										></textarea>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<form class="contact_form_wrapper" action="#">
+						<div class="contact_form_row">
+							<div class="contact_form_col_label contact_form_col_label_radio">
+								<span class="contact_form_label">お問い合わせ種類</span
+								><span class="contact_form_required">必須</span>
+							</div>
+							<ul class="contact_form_col_input contact_radio_wrapper">
+								<li class="contact_radio">
+									<input type="radio" name="about" id="about01" />
+									<label for="about01" class="contact_radio_label"
+										>弊社製品について</label
+									>
+								</li>
+								<li class="contact_radio">
+									<input type="radio" name="about" id="about02" />
+									<label for="about02" class="contact_radio_label"
+										>いちご狩りについて</label
+									>
+								</li>
+								<li class="contact_radio">
+									<input type="radio" name="about" id="about03" />
+									<label for="about03" class="contact_radio_label"
+										>その他のお問い合わせ</label
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="contact_form_row">
+							<div class="contact_form_col_label">
+								<label class="contact_form_label" for="name">お名前</label>
+								<span class="contact_form_required">必須</span>
+							</div>
+							<div class="contact_form_col_input">
+								<input class="contact_form_input" type="text" id="name" />
+							</div>
+						</div>
+						<div class="contact_form_row">
+							<div class="contact_form_col_label">
+								<label class="contact_form_label" for="address">郵便番号</label>
+							</div>
+							<div class="contact_form_col_input">
+								<input
+									class="contact_form_input contact_form_input_address"
+									type="text"
+									id="address"
+								/>
+							</div>
+						</div>
+						<div class="contact_form_row">
+							<div class="contact_form_col_label">
+								<label class="contact_form_label" for="email"
+									>メールアドレス</label
+								>
+								<span class="contact_form_required">必須</span>
+							</div>
+							<div class="contact_form_col_input">
+								<input class="contact_form_input" type="email" id="email" />
+							</div>
+						</div>
+						<div class="contact_form_row">
+							<div class="contact_form_col_label">
+								<label class="contact_form_label" for="phone">電話番号</label>
+								<span class="contact_form_required">必須</span>
+							</div>
+							<div class="contact_form_col_input">
+								<input class="contact_form_input" type="phone" id="phone" />
+							</div>
+						</div>
+						<div class="contact_form_row">
+							<div class="contact_form_col_label">
+								<label class="contact_form_label" for="contact"
+									>お問い合わせ内容</label
+								>
+								<span class="contact_form_required">必須</span>
+							</div>
+							<div class="contact_form_col_input">
+								<textarea
+									class="contact_form_textarea"
+									name="contact"
+									id="contact"
+									cols="30"
+									rows="10"
+								></textarea>
+							</div>
+						</div>
 						<button class="contact_form_button" type="submit">送信する</button>
 					</form>
 				</div>
