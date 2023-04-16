@@ -551,4 +551,119 @@ body {
 }
 
 .contact {
+	padding: 104px 0 30px;
+	background: s.$bgColor1;
+
+	&_title {
+		font-size: 32px;
+		font-weight: 700;
+		text-align: center;
+		line-height: 46px;
+	}
+
+	&_text {
+		margin-top: 67px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 26px;
+		text-align: center;
+	}
+
+	&_form {
+		width: min(58%, 740px);
+		margin-inline: auto;
+		margin-top: 93px;
+		padding: 37px 76px 43px;
+		background: #fff;
+		border-radius: 20px;
+
+		&_title {
+			font-size: 18px;
+			font-weight: 700;
+			text-align: center;
+		}
+
+		&_input,
+		&_textarea {
+			width: 100%;
+			background: #efeae6;
+			border-radius: 5px;
+			padding: 1em;
+		}
+
+		&_input {
+			height: 40px;
+		}
+
+		&_textarea {
+			height: 170px;
+		}
+
+		&_required {
+			margin-left: 18px;
+			padding: 5px 11px;
+			background: s.$buttonColor;
+			border-radius: 10px;
+		}
+
+		&_button {
+			display: block;
+			width: 243px;
+			margin-inline: auto;
+			margin-top: 26px;
+			padding: 13px 0;
+			font-size: 14px;
+			background: s.$buttonColor;
+			border-radius: 10px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+	}
+
+	&_table {
+		width: 100%;
+		margin-top: 44px;
+		font-size: 16px;
+		font-weight: 700;
+
+		td {
+			padding-bottom: 24px;
+		}
+
+		&_label {
+			min-width: 200px;
+		}
+
+		&_radio {
+			vertical-align: top;
+		}
+	}
+
+	&_radio {
+		font-weight: 400;
+		line-height: 23px;
+
+		input:checked + label {
+			&::before {
+				border: 6px solid s.$fontColorDark;
+			}
+		}
+
+		&_label {
+			position: relative;
+			padding-left: 23px;
+
+			&::before {
+				position: absolute;
+				top: 5px;
+				left: 0;
+				content: "";
+				width: 16px;
+				height: 16px;
+				border-radius: 8px;
+				border: 2px solid s.$fontColorDark;
+				transition: border-width 0.3s linear;
+			}
+		}
+	}
 }
