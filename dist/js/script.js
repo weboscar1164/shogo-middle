@@ -65,10 +65,11 @@ $(function () {
 			if (openNavToggle.hasClass(isNavOpen)) {
 				openNavToggle.removeClass(isNavOpen);
 				navSp.removeClass(openNav);
-			} else {
-				openNavToggle.addClass(isNavOpen);
-				navSp.addClass(openNav);
 			}
+			// else {
+			// 	openNavToggle.addClass(isNavOpen);
+			// 	navSp.addClass(openNav);
+			// }
 		}, 1000);
 
 		return false;
