@@ -44,6 +44,36 @@ $(function () {
 		}
 	});
 
+	//ページ内リンク操作
+	const navLink = $('a[href^="#"]');
+
+	navLink.click(function () {
+		let href = $(this).attr("href");
+		let target = $(href == "#" || href == "" ? "html" : href);
+		let position = target.offset().top;
+
+		console.log(position);
+		$("body,html").animate(
+			{
+				scrollTop: position,
+			},
+			1000,
+			"swing"
+		);
+
+		setTimeout(function () {
+			if (openNavToggle.hasClass(isNavOpen)) {
+				openNavToggle.removeClass(isNavOpen);
+				navSp.removeClass(openNav);
+			} else {
+				openNavToggle.addClass(isNavOpen);
+				navSp.addClass(openNav);
+			}
+		}, 1000);
+
+		return false;
+	});
+
 	//faq操作
 	const openAnswerToggle = $(".js_open_answer_toggle");
 	const answer = $("answer");
