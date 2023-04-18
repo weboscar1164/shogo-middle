@@ -28,6 +28,23 @@ const swiper = new Swiper(".swiper", {
 });
 
 $(function () {
+	//header_nav_toggle操作
+	const openNavToggle = $(".js_open_nav_toggle");
+	const isNavOpen = "header_nav_toggle_open";
+	const navSp = $(".header_nav_sp");
+	const openNav = "header_nav_sp_open";
+
+	openNavToggle.click(function () {
+		if ($(this).hasClass(isNavOpen)) {
+			$(this).removeClass(isNavOpen);
+			navSp.removeClass(openNav);
+		} else {
+			$(this).addClass(isNavOpen);
+			navSp.addClass(openNav);
+		}
+	});
+
+	//faq操作
 	const openAnswerToggle = $(".js_open_answer_toggle");
 	const answer = $("answer");
 	let isOpen = "js_is_open";

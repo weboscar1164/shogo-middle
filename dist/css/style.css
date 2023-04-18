@@ -328,6 +328,19 @@ body {
   width: 96px;
   z-index: 10;
 }
+.header_logo_sp {
+  padding-top: 61px;
+}
+.header_logo_sp_img {
+  display: block;
+  margin-inline: auto;
+  width: 55px;
+}
+.header_logo_sp_text {
+  display: block;
+  margin-inline: auto;
+  width: 280px;
+}
 .header_nav_pc {
   left: -30px;
   position: relative;
@@ -347,6 +360,80 @@ body {
 .header_nav_pc_blank {
   width: 300px;
 }
+.header_nav_sp {
+  background: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: translate 0.4s ease;
+  translate: 100% 0;
+  width: 100%;
+  z-index: 999;
+}
+.header_nav_sp_list {
+  margin-top: 50px;
+}
+.header_nav_sp_link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+.header_nav_sp_link:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.header_nav_sp_open {
+  translate: 0 0;
+}
+.header_nav_toggle {
+  background: #fed966;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  height: 48px;
+  position: fixed;
+  right: 20px;
+  scale: 0;
+  top: 20px;
+  transition: scale 0.3s;
+  width: 48px;
+  z-index: 1000;
+}
+.header_nav_toggle_line {
+  background: #4e301b;
+  height: 2px;
+  left: 15px;
+  position: absolute;
+  top: 24px;
+  transition: background-color 0.3s;
+  width: 18px;
+}
+.header_nav_toggle_line::before, .header_nav_toggle_line::after {
+  background: #4e301b;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: translate 0.3s, rotate 0.3s;
+  width: 18px;
+}
+.header_nav_toggle_line::before {
+  translate: 0 -5px;
+}
+.header_nav_toggle_line::after {
+  translate: 0 5px;
+}
+.header_nav_toggle_open .header_nav_toggle_line {
+  background: inherit;
+}
+.header_nav_toggle_open .header_nav_toggle_line::before {
+  rotate: 45deg;
+  translate: 0 0;
+}
+.header_nav_toggle_open .header_nav_toggle_line::after {
+  rotate: -45deg;
+  translate: 0 0;
+}
 @media (max-width: 1200px) {
   .header {
     padding-top: 160px;
@@ -358,6 +445,9 @@ body {
 @media (max-width: 768px) {
   .header_nav_pc {
     display: none;
+  }
+  .header_nav_toggle {
+    scale: 1;
   }
 }
 
@@ -441,7 +531,8 @@ body {
 }
 @media (max-width: 768px) {
   .about_title {
-    font-size: 33px;
+    font-size: 28px;
+    line-height: 45px;
   }
 }
 
