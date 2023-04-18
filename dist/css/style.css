@@ -246,10 +246,10 @@ body {
 .mv {
   background: url(../../img/fv.jpg) no-repeat center/cover;
   height: calc(100vh + 77px);
-  padding-top: 112px;
 }
 .mv_container {
   margin: 0 auto;
+  padding-top: 112px;
   width: 78%;
 }
 .mv h1 {
@@ -269,12 +269,30 @@ body {
   margin-left: 21px;
 }
 @media (max-width: 768px) {
+  .mv {
+    height: calc(100vh - 200px);
+  }
   .mv_container {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    padding-bottom: 119px;
     width: 90%;
   }
   .mv h1 {
     font-size: 24px;
-    writing-mode: sideways-lr;
+    letter-spacing: normal;
+    margin-left: 0;
+    text-indent: 0;
+    writing-mode: horizontal-tb;
+  }
+  .mv h1 span {
+    line-height: 24px;
+    padding: 7px;
+  }
+  .mv h1 span:not(:last-of-type) {
+    margin-bottom: 6px;
+    margin-left: 0;
   }
 }
 
@@ -334,6 +352,11 @@ body {
     padding-top: 160px;
   }
   .header_nav_pc_blank {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header_nav_pc {
     display: none;
   }
 }

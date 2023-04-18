@@ -67,13 +67,14 @@ body {
 
 .mv {
 	height: calc(100vh + 77px);
-	padding-top: 112px;
 	background: url(../../img/fv.jpg) no-repeat center/cover;
 
 	&_container {
 		width: 78%;
 		margin: 0 auto;
+		padding-top: 112px;
 	}
+
 	h1 {
 		margin-left: auto;
 		font-size: 32px;
@@ -94,13 +95,30 @@ body {
 	}
 
 	@include s.sm {
+		height: calc(100vh - 200px);
 		&_container {
+			display: flex;
+			align-items: flex-end;
 			width: 90%;
+			height: 100%;
+			padding-bottom: 119px;
 		}
 
 		h1 {
+			margin-left: 0;
 			font-size: 24px;
-			writing-mode: sideways-lr;
+			writing-mode: horizontal-tb;
+			letter-spacing: normal;
+			text-indent: 0;
+
+			span {
+				padding: 7px;
+				line-height: 24px;
+				&:not(:last-of-type) {
+					margin-left: 0;
+					margin-bottom: 6px;
+				}
+			}
 		}
 	}
 }
@@ -172,6 +190,14 @@ body {
 				&_blank {
 					display: none;
 				}
+			}
+		}
+	}
+
+	@include s.sm {
+		&_nav {
+			&_pc {
+				display: none;
 			}
 		}
 	}
