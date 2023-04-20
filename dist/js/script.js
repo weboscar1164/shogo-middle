@@ -1,9 +1,5 @@
+// swiper
 const swiper = new Swiper(".swiper", {
-	// Optional parameters
-	// loop: true,
-	// slidesPerView: 4,
-	// spaceBetween: 24,
-	// centeredSlides: true,
 	breakpoints: {
 		// スライドの表示枚数：500px以上の場合
 		0: {
@@ -27,6 +23,7 @@ const swiper = new Swiper(".swiper", {
 	},
 });
 
+// jQuery
 $(function () {
 	//header_nav_toggle操作
 	const openNavToggle = $(".js_open_nav_toggle");
@@ -52,7 +49,6 @@ $(function () {
 		let target = $(href == "#" || href == "" ? "html" : href);
 		let position = target.offset().top;
 
-		console.log(position);
 		$("body,html").animate(
 			{
 				scrollTop: position,
@@ -66,10 +62,6 @@ $(function () {
 				openNavToggle.removeClass(isNavOpen);
 				navSp.removeClass(openNav);
 			}
-			// else {
-			// 	openNavToggle.addClass(isNavOpen);
-			// 	navSp.addClass(openNav);
-			// }
 		}, 1000);
 
 		return false;
@@ -88,5 +80,85 @@ $(function () {
 			$(this).next(answer).fadeIn();
 			$(this).addClass(isOpen);
 		}
+	});
+
+	// js-validate
+	// $.validator.addMethod(
+	// 	"alphaNum",
+	// 	function (value, element) {
+	// 		return this.optional(element) || /^([a-zA-Z0-9]+)$/.test(value);
+	// 	},
+	// 	"半角英数字を入力してください"
+	// );
+
+	$.validator.addMethod(
+		"phoneNum",
+		function (value, element) {
+			return this.optional(element) || /\d{2,4}-?\d{2,4}-?\d{4}/.test(value);
+		},
+		"有効な電話番号を入力してください"
+	);
+
+	$.validator.addMethod(
+		"addressNum",
+		function (value, element) {
+			return this.optional(element) || /^[0-9]{3}-?[0-9]{4}$/.test(value);
+		},
+		"有効な郵便番号を入力してください"
+	);
+
+	$("form").validate({
+		rules: {
+			about: {
+				required: true,
+			},
+			name: {
+				required: true,
+			},
+			address: {
+				addressNum: true,
+			},
+			email: {
+				required: true,
+				email: true,
+			},
+			phone: {
+				phoneNum: true,
+				required: true,
+			},
+			contact: {
+				required: true,
+			},
+		},
+
+		messages: {
+			about: {
+				required: "必須項目です。",
+			},
+			name: {
+				required: "必須項目です。",
+			},
+			address: {
+				number: "数字を入力してください。",
+			},
+			email: {
+				required: "必須項目です。",
+				email: "メールアドレスを入力してください。",
+			},
+			phone: {
+				required: "必須項目です。",
+			},
+			contact: {
+				required: "必須項目です。",
+			},
+		},
+
+		errorClass: "validationError",
+
+		errorElement: "span",
+
+		errorPlacement: function (error, element) {
+			error.appendTo(element.data("error_place"));
+		},
 	});
 });

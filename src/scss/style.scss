@@ -293,6 +293,7 @@ body {
 		padding-top: 160px;
 		&_nav {
 			&_pc {
+				left: 0;
 				&_blank {
 					display: none;
 				}
@@ -855,10 +856,16 @@ body {
 			margin-top: 50px;
 			padding: 13px 0;
 			font-size: 14px;
-			background: s.$buttonColor;
+			background: s.$inputColor;
 			border-radius: 10px;
 			font-weight: 700;
 			line-height: 20px;
+			pointer-events: none;
+
+			&_active {
+				background: s.$buttonColor;
+				pointer-events: auto;
+			}
 		}
 	}
 
@@ -934,6 +941,11 @@ body {
 			}
 		}
 	}
+}
+
+// validation
+.validationError {
+	color: rgb(255, 69, 58);
 }
 
 .footer {

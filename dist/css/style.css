@@ -141,7 +141,7 @@ textarea {
 
 input[type=checkbox],
 input[type=radio] {
-  display: none;
+  opacity: 0;
 }
 
 input[type=submit],
@@ -437,6 +437,9 @@ body {
 @media (max-width: 1200px) {
   .header {
     padding-top: 160px;
+  }
+  .header_nav_pc {
+    left: 0;
   }
   .header_nav_pc_blank {
     display: none;
@@ -891,7 +894,7 @@ body {
   padding: 5px 11px;
 }
 .contact_form_button {
-  background: #fed966;
+  background: #efeae6;
   border-radius: 10px;
   display: block;
   font-size: 14px;
@@ -900,7 +903,12 @@ body {
   margin-inline: auto;
   margin-top: 50px;
   padding: 13px 0;
+  pointer-events: none;
   width: 243px;
+}
+.contact_form_button_active {
+  background: #fed966;
+  pointer-events: auto;
 }
 .contact_radio {
   font-weight: 400;
@@ -953,6 +961,10 @@ body {
   .contact_form_container {
     padding: 37px 1.5em 43px;
   }
+}
+
+.validationError {
+  color: rgb(255, 69, 58);
 }
 
 .footer_container {

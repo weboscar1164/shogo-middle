@@ -362,7 +362,7 @@
 				</div>
 				<div class="contact_form_container">
 					<p class="contact_form_title">お問い合わせメールフォーム</p>
-					<form class="contact_form_wrapper" action="#">
+					<form id="form" class="contact_form_wrapper" action="#">
 						<div class="contact_form_row">
 							<div class="contact_form_col_label contact_form_col_label_radio">
 								<span class="contact_form_label">お問い合わせ種類</span
@@ -370,7 +370,12 @@
 							</div>
 							<ul class="contact_form_col_input contact_radio_wrapper">
 								<li class="contact_radio">
-									<input type="radio" name="about" id="about01" />
+									<input
+										type="radio"
+										name="about"
+										id="about01"
+										data-error_place="#radioError"
+									/>
 									<label for="about01" class="contact_radio_label"
 										>弊社製品について</label
 									>
@@ -387,6 +392,9 @@
 										>その他のお問い合わせ</label
 									>
 								</li>
+								<li>
+									<span id="radioError"></span>
+								</li>
 							</ul>
 						</div>
 						<div class="contact_form_row">
@@ -395,7 +403,14 @@
 								<span class="contact_form_required">必須</span>
 							</div>
 							<div class="contact_form_col_input">
-								<input class="contact_form_input" type="text" id="name" />
+								<input
+									class="contact_form_input"
+									type="text"
+									id="name"
+									name="name"
+									data-error_place="#nameError"
+								/>
+								<span id="nameError"></span>
 							</div>
 						</div>
 						<div class="contact_form_row">
@@ -407,7 +422,10 @@
 									class="contact_form_input contact_form_input_address"
 									type="text"
 									id="address"
+									name="address"
+									data-error_place="#addressError"
 								/>
+								<span id="addressError"></span>
 							</div>
 						</div>
 						<div class="contact_form_row">
@@ -418,7 +436,14 @@
 								<span class="contact_form_required">必須</span>
 							</div>
 							<div class="contact_form_col_input">
-								<input class="contact_form_input" type="email" id="email" />
+								<input
+									class="contact_form_input"
+									type="email"
+									id="email"
+									name="email"
+									data-error_place="#emailError"
+								/>
+								<span id="emailError"></span>
 							</div>
 						</div>
 						<div class="contact_form_row">
@@ -427,7 +452,14 @@
 								<span class="contact_form_required">必須</span>
 							</div>
 							<div class="contact_form_col_input">
-								<input class="contact_form_input" type="phone" id="phone" />
+								<input
+									class="contact_form_input"
+									type="text"
+									id="phone"
+									name="phone"
+									data-error_place="#phoneError"
+								/>
+								<span id="phoneError"></span>
 							</div>
 						</div>
 						<div class="contact_form_row">
@@ -444,10 +476,18 @@
 									id="contact"
 									cols="30"
 									rows="10"
+									name="contact"
+									data-error_place="#contactError"
 								></textarea>
+								<span id="contactError"></span>
 							</div>
 						</div>
-						<button class="contact_form_button" type="submit">送信する</button>
+						<button
+							class="contact_form_button contact_form_button_active"
+							type="submit"
+						>
+							送信する
+						</button>
 					</form>
 				</div>
 			</div>
@@ -486,6 +526,7 @@
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="./dist/js/jquery-3.6.4.min.js"></script>
+		<script src="./dist/js/jquery.validate.min.js"></script>
 		<script src="./dist/js/script.js"></script>
 	</body>
 </html>

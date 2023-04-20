@@ -152,7 +152,8 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-	display: none;
+	// display: none;
+	opacity: 0;
 }
 
 input[type="submit"],
