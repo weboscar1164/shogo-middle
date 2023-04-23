@@ -25,6 +25,12 @@ const swiper = new Swiper(".swiper", {
 
 // jQuery
 $(function () {
+	//logoの表示
+	$(window).on("load", function () {
+		$("#splash").delay(1500).fadeOut("slow"); //ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+		$("#splash_logo").delay(1200).fadeOut("slow"); //ロゴを1.2秒（1200ms）待機してからフェードアウト
+	});
+
 	//header_nav_toggle操作
 	const openNavToggle = $(".js_open_nav_toggle");
 	const isNavOpen = "header_nav_toggle_open";
@@ -83,14 +89,6 @@ $(function () {
 	});
 
 	// js-validate
-	// $.validator.addMethod(
-	// 	"alphaNum",
-	// 	function (value, element) {
-	// 		return this.optional(element) || /^([a-zA-Z0-9]+)$/.test(value);
-	// 	},
-	// 	"半角英数字を入力してください"
-	// );
-
 	$.validator.addMethod(
 		"phoneNum",
 		function (value, element) {
@@ -161,4 +159,11 @@ $(function () {
 			error.appendTo(element.data("error_place"));
 		},
 	});
+
+	if (validator.valid()) {
+		$(".contact_form_button").addClass("contact_form_button_active");
+	} else {
+		validator.focusInvalid();
+		$(".contact_form_button").removeClass("contact_form_button_active");
+	}
 });
