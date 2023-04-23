@@ -158,6 +158,10 @@ $(function () {
 		errorPlacement: function (error, element) {
 			error.appendTo(element.data("error_place"));
 		},
+
+		onfocusout: function (element) {
+			$(element).valid();
+		},
 	});
 
 	if (validator.valid()) {
